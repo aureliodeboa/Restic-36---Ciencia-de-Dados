@@ -2,18 +2,18 @@
 
 Este projeto tem como objetivo analisar e prever o engajamento de influenciadores no Instagram utilizando um modelo de regressão linear. A base de dados utilizada contém informações sobre o número de seguidores, posts, curtidas, e taxa de engajamento, entre outras variáveis.
 
-## Descrição do Projeto
+## 📄 Descrição do Projeto
 
 A partir da base de dados dos influenciadores do Instagram, o projeto busca analisar a relação entre diversas variáveis e a taxa de engajamento dos influenciadores. O modelo de regressão linear foi utilizado para entender essa relação e realizar previsões sobre a taxa de engajamento com base em variáveis como o número de seguidores, curtidas por post e a média de curtidas em posts recentes.
 
-### Objetivos
+### 📈 Objetivos
 
 - Analisar a correlação entre variáveis como seguidores, curtidas e número de postagens.
 - Construir e treinar um modelo de regressão linear para prever a taxa de engajamento.
 - Comparar o modelo de regressão linear com os modelos de regularização Lasso e Ridge.
 - Avaliar a precisão do modelo utilizando métricas como MSE, MAE, e R².
 
-## Base de Dados
+## 📊 Base de Dados
 
 A base de dados utilizada foi baixada do Kaggle e contém informações sobre influenciadores no Instagram. O dataset inclui as seguintes colunas principais:
 
@@ -31,15 +31,13 @@ O dataset foi limpo para remover dados nulos e valores inconsistentes.
 Primeiro, faça o clone do repositório em sua máquina local:
 
 ```bash
-Copiar código
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DO_REPOSITORIO>
+git clone https://github.com/aureliodeboa/Restic36-Ciencia-de-Dados.git
+cd .\Restic36-Ciencia-de-Dados\
 ```
 2. Configure o Ambiente
 Certifique-se de que possui o Python 3.7 ou superior instalado. Recomenda-se a utilização de um ambiente virtual para instalar as dependências:
 
 ```bash
-Copiar código
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
@@ -57,7 +55,7 @@ Alternativamente você pode instalar as dependências manualmente:
 pip install kagglehub pandas seaborn numpy matplotlib scikit-learn
 ```
 
-### Pré-requisitos
+### ✔️ Pré-requisitos
 
 Certifique-se de ter os seguintes pacotes Python instalados:
 
@@ -68,7 +66,7 @@ Certifique-se de ter os seguintes pacotes Python instalados:
 - `sklearn`
 - `kagglehub`
 
-### Passos
+### 📑 Passos
 
 1. Baixe o dataset utilizando o KaggleHub:
 
@@ -122,22 +120,22 @@ Certifique-se de ter os seguintes pacotes Python instalados:
     r2 = r2_score(y_test, y_pred)
     ```
 
-### Resultados
+### 🔎 Resultados
 
-- **MSE**: [Valor]
-- **MAE**: [Valor]
-- **R²**: [Valor]
+- **MSE**: [0.0059]
+- **MAE**: [0.0442]
+- **R²**: [0.8153]
 
 Os resultados mostram que o modelo de regressão linear conseguiu explicar uma parte significativa da variabilidade na taxa de engajamento dos influenciadores com uma boa precisão.
 
-## Relatório
+## 📝 Relatório
 
 O relatório detalhado deste projeto, incluindo a metodologia, análise de dados e resultados obtidos, pode ser encontrado no arquivo PDF [relatorio.pdf](./relatorio.pdf).
 
-## Conclusão
+## 💡 Conclusão
 
 O modelo de regressão linear forneceu uma boa base para análise de tendências no engajamento de influenciadores do Instagram. Embora o modelo tenha mostrado bons resultados, outras variáveis, como o conteúdo dos posts e a frequência de postagens, podem influenciar ainda mais a taxa de engajamento e poderiam ser exploradas em modelos mais complexos.
 
 ---
 
-**Autor**: Andressa Carvalho, Aurélio José
+**Autores**: Andressa Carvalho, Aurélio José
